@@ -38,14 +38,12 @@ while (i >= 1){
 }
 
 function inverterTexto(str){
-    let solucao = "";
-    let tamanho = str.lenght-1;
-    for(let posicao = tamanho; posicao >= 0; posicao--){
-        solucao = solucao + str(posicao)
-    }
-    console.log(solucao);
-    return solucao;
+    let soltarletras = str.split("");
+    let inverterletras = soltarletras.reverse();
+    let juntar = inverterletras.join("");
+    console.log(juntar)
 }
+
 inverterTexto("javascript")
 
 function contarCaracteres(){
@@ -93,18 +91,24 @@ for (let i = 1; i < 21; i++){
     }
 }
 
-let strin = "arara"
-function verificarPalindromo(str) {
-    var splitString = str.split("");
-    var reverseArray = splitString.reverse();
-    var joinArray = reverseArray.join("");
-    if (strin == joinArray) {
-        print("Palindromo")
-    } else {
-        print("Não é palindromo")
+function verificarPalindromo(){
+    let palavra1 = "arara";
+    let palavra2 = "arara";
+    function inverterTexto(str){
+        let soltarletras = str.split("");
+        let inverterletras = soltarletras.reverse();
+        let juntar = inverterletras.join("");
+        console.log(juntar)
+    }
+    inverterTexto(palavra2)
+    if (palavra1 == palavra2){
+        console.log("é palindromo")
+    }
+    else{
+        console.log("não é um palindromo")
     }
 }
-verificarPalindromo(strin)
+verificarPalindromo()
 
 
 
